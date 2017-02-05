@@ -4,7 +4,7 @@ This is the Bank Kata implemented with the aim of following Sandro Mancuso's exa
 
 All credit for this should go to Mancuso and Codurance. I'm just going through this kata for my own benefit.
 
-Following the method, we start with an Acceptance Test, create stubs for any delegates and work on the acceptance test until it fails for the right reason.
+Following the method, we start with an Acceptance Test, create stubs for any delegates (shells with stubbed methods) and work on the acceptance test until it fails for the right reason.
 
 ## Problem Description - Bank Kata
 

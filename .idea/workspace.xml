@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae503968-ff56-4e3e-811f-667d72aeec3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" afterPath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,7 +33,7 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
+            <state relative-caret-position="254">
               <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
@@ -59,12 +56,12 @@
       <file leaf-file-name="PrintStatementFeature.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,9 +99,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Account.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Account.java" />
       </list>
     </option>
   </component>
@@ -225,7 +222,7 @@
       </pane>
     </panes>
   </component>
-  <component name="RunManager" selected="JUnit.PrintStatementFeature.print_statement_containing_all_transactions">
+  <component name="RunManager" selected="JUnit.PrintStatementFeature">
     <configuration default="false" name="PrintStatementFeature" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -488,8 +485,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature.print_statement_containing_all_transactions" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature.print_statement_containing_all_transactions" />
       </list>
     </recent_temporary>
   </component>
@@ -508,6 +505,9 @@
   </component>
   <component name="TestHistory">
     <history-entry file="PrintStatementFeature - 2017.02.05 at 00h 28m 21s.xml">
+      <configuration name="PrintStatementFeature" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PrintStatementFeature - 2017.02.05 at 12h 34m 29s.xml">
       <configuration name="PrintStatementFeature" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PrintStatementFeature_print_statement_containing_all_transactions - 2017.02.05 at 12h 30m 58s.xml">
@@ -593,8 +593,8 @@
           <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -627,14 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Account.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -643,14 +635,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="33" column="66" lean-forward="true" selection-start-line="33" selection-start-column="66" selection-end-line="33" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
           </folding>
         </state>
       </provider>
