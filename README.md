@@ -2,7 +2,7 @@
 
 This is the Bank Kata implemented with the aim of following Sandro Mancuso's example of Outside-in TDD from https://www.youtube.com/watch?v=XHnuMjah6ps
 
-All credit for this should go to Mancuso and Codurance. I'm just going through this kata for my own benefit.
+All credit for this should go to Mancuso and Codurance. Any mistakes are down to me.
 
 Following the method, we start with an Acceptance Test, create stubs for any delegates (shells with stubbed methods) and work on the acceptance test until it fails for the right reason.
 
@@ -52,3 +52,11 @@ What we do want to test without a mock in the PrintStatementFeature is the Accou
 The PrintStatementFeature will be failing for the right reason when it throws "Wanted but not invoked" for printLine. Naturally nothing does call printLine yet. For it to get called we're going to need to inject our Console mock somehow but we haven't decided how upfront.
 
 Will we inject console into Account or into something else? We don't want to decide that yet. Next step is to consider how to unit test account and let the decision come out as we go along.
+
+### Second Movement - unit testing our way into Account
+
+So we need a unit test for account. We need to think about what we want account to do. It has to record debits, withdrawals and enable printing of a statement. So transactions are going to go through it.
+
+Presumably we are going to want transactions to be managed via a repository. So to test a deposit we are going to need to check that something happens through a TransactionRepository. It's going to need some sort of deposit method.
+
+We mock the TransactionRepository within the Account's unit test as it isn't part of the Account. The TransactionRepository will need to be injected into Account if depositing through Acccount is to invoke it.
