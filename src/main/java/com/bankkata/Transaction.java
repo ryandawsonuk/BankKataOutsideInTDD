@@ -30,4 +30,12 @@ public class Transaction {
         result = 31 * result + amount;
         return result;
     }
+
+    public String getDate() {
+        return date;
+    }
+
+    public int getAmount() {
+        return amount;
+    }
 }

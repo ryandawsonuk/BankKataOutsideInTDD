@@ -62,7 +62,7 @@ Presumably we are going to want transactions to be managed via a repository. So 
 
 We mock the TransactionRepository within the Account's unit test as it isn't part of the Account. The TransactionRepository will need to be injected into Account if depositing through Acccount is to invoke it.
 
-For the PrintStatementFeature Acceptance Test we use an unmocked instance of TransactionRepository, since the Acceptance Test is testing everything internal to the system. So we
+For the PrintStatementFeature Acceptance Test we use an unmocked instance of TransactionRepository, since the Acceptance Test is testing everything internal to the system.
 
 ### Third Movement - unit testing our way into Account, printing statements
 
@@ -117,3 +117,26 @@ What is the side-effect of StatementPrinter doing a print? It is going to have t
 We can test that the printing always includes a header. This should happen even if there are no transactions. So we can test for that an implement that behaviour.
 
 We also know that the StatementPrinter should print transactions in reverse chronological order. We know how to test for this as we basically did it already in PrintStatementFeature. But this time we want to create the transactions for the test specifically, not through Account (as we're not testing Account in the StatementPrinter unit test).
+
+How then to implement printing? We need to be able to calculate a running balance from transactions as we have to print it. One way to do a running total is by using a stream to map transactions to statement lines. This uses some quite new and unusual java features so is commented in some detail.
+
+### Finishing touches
+
+We can then fill in Console, which can just call System.out.println as it is only a wrapper for Java console access.
+
+We can then re-run the PrintStatementFeature Acceptance Test. We then hit something of a mystery. The print_statement_containing_all_transactions test fails with this output:
+
+Wanted but not invoked:
+console.printLine(
+    "10/04/2014 | 500.00 | 1400.00"
+);
+
+But much the same test in StatementPrinterShould passed. What could cause this? A clue comes from debugging:
+
+(TransactionsWithNoDates.gif)[TransactionsWithNoDates.gif]
+
+No dates are getting added to the Transactions. This is because we gave explicit dates in StatementPrinterShould but are mocking the Clock in PrintStatementFeature. And we haven't told the Clock mock what to return.
+
+## What is the point?
+
+The main purpose was to illustrate the Outside-In/Mockist approach to TDD in sufficient detail that it can be used for reference. Another reason is to illustrate how design decisions get made in this approach. Note the number of design decisions made in movements 2 and 4 especially. We had to make those decisions in order to proceed and the method itself didn't show us how to make them.

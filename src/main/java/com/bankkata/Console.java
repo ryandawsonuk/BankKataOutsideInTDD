@@ -6,7 +6,7 @@ package com.bankkata;
 public class Console {
 
     public void printLine(String txt){
-        throw new UnsupportedOperationException();
+        System.out.println(txt);
     }
 
 }
