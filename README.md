@@ -98,3 +98,4 @@ So we need a Clock abstraction but we don't have to implement it just yet. All w
 
 Once we've got the side-effects defined in the create_and_store_a_transaction test of TransactionRepositoryShould, then we will need to fill in Transaction. It doesn't need behaviour, just attributes. But we do need equals and hashCode implemented (auto-implemented using IDE) so that Transactions can be compared by content.
 
+Withdrawal is then basically the same as deposit. 

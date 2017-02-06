@@ -32,7 +32,7 @@ public class TransactionRepositoryShould {
     }
 
     @Test
-    public void create_and_store_a_transaction(){
+    public void create_and_store_a_deposit_transaction(){
         given(clock.dateAsString()).willReturn(TODAY);
         transactionRepository.addDeposit(100);
 
@@ -41,6 +41,18 @@ public class TransactionRepositoryShould {
         // want right number of transactions to have been added and for transactions to match
         assertThat(transactions.size(),is(1));
         assertThat(transactions.get(0),is(transaction(TODAY,100)));
+    }
+
+    @Test
+    public void create_and_store_a_withdrawal_transaction(){
+        given(clock.dateAsString()).willReturn(TODAY);
+        transactionRepository.addWithdrawal(100);
+
+        List<Transaction> transactions = transactionRepository.allTransactions();
+
+        // want right number of transactions to have been added and for transactions to match
+        assertThat(transactions.size(),is(1));
+        assertThat(transactions.get(0),is(transaction(TODAY,-100)));
     }
 
     //helper method to create a Transaction for comparison purposes
