@@ -27,7 +27,8 @@ public class TransactionRepositoryShould {
 
     @Before
     public void initialise(){
-        transactionRepository = new TransactionRepository();
+
+        transactionRepository = new TransactionRepository(clock);
     }
 
     @Test

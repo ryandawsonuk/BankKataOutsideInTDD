@@ -1,9 +1,6 @@
 package feature;
 
-import com.bankkata.Account;
-import com.bankkata.Console;
-import com.bankkata.StatementPrinter;
-import com.bankkata.TransactionRepository;
+import com.bankkata.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,13 +18,15 @@ import static org.mockito.Mockito.inOrder;
 @RunWith(MockitoJUnitRunner.class)
 public class PrintStatementFeature {
 
+    // console and clock mocked as treating them as external world
     @Mock Console console;
+    @Mock Clock clock;
     private Account account;
 
     @Before
     public void initialise(){
         StatementPrinter statementPrinter = new StatementPrinter();
-        TransactionRepository transactionRepository = new TransactionRepository();
+        TransactionRepository transactionRepository = new TransactionRepository(clock);
         account = new Account(transactionRepository,statementPrinter);
 
     }

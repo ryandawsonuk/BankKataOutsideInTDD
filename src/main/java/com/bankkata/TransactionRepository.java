@@ -1,5 +1,6 @@
 package com.bankkata;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -7,8 +8,16 @@ import java.util.List;
  */
 public class TransactionRepository {
 
+    private final Clock clock;
+    private List<Transaction> transactions = new ArrayList<Transaction>();
+
+    public TransactionRepository(Clock clock){
+        this.clock = clock;
+    }
+
     public void addDeposit(int amount){
-        throw new UnsupportedOperationException();
+        Transaction depositTransaction = new Transaction(clock.dateAsString(), amount);
+        transactions.add(depositTransaction);
     }
 
     public void addWithdrawal(int amount){

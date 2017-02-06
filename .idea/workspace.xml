@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae503968-ff56-4e3e-811f-667d72aeec3b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/Clock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/should/AccountShould.java" afterPath="$PROJECT_DIR$/src/test/java/should/AccountShould.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" afterPath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java" afterPath="$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,24 +26,34 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/README.md">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="307">
+                    <caret line="98" column="200" lean-forward="false" selection-start-line="98" selection-start-column="200" selection-end-line="98" selection-end-column="200" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="0">
               <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="98" column="127" lean-forward="false" selection-start-line="98" selection-start-column="127" selection-end-line="98" selection-end-column="127" />
               <folding />
             </state>
           </provider>
@@ -54,13 +62,12 @@
       <file leaf-file-name="TransactionRepositoryShould.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+            <state relative-caret-position="187">
+              <caret line="24" column="56" lean-forward="true" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#1380#1381#0" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
+                <element signature="e#1386#1387#0" expanded="true" />
+                <element signature="e#1438#1439#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,7 +86,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -120,14 +127,17 @@
       <file leaf-file-name="TransactionRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="337">
+              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
-                <element signature="e#222#223#0" expanded="true" />
-                <element signature="e#266#267#0" expanded="true" />
-                <element signature="e#323#324#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#244#257#0" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
+                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#729#730#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +146,8 @@
       <file leaf-file-name="PrintStatementFeature.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="260">
+              <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -190,14 +200,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/AccountShould.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/StatementPrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Account.java" />
-        <option value="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Clock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/should/AccountShould.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
+        <option value="$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -737,9 +747,6 @@
     <history-entry file="AccountShould_print_a_statement - 2017.02.06 at 09h 56m 26s.xml">
       <configuration name="AccountShould.print_a_statement" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AccountShould_store_a_withdrawal_transaction - 2017.02.06 at 09h 15m 44s.xml">
-      <configuration name="AccountShould.store_a_withdrawal_transaction" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AccountShould_store_a_withdrawal_transaction - 2017.02.06 at 09h 17m 25s.xml">
       <configuration name="AccountShould.store_a_withdrawal_transaction" configurationId="JUnit" />
     </history-entry>
@@ -750,6 +757,9 @@
       <configuration name="PrintStatementFeature" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TransactionRepositoryShould - 2017.02.06 at 10h 58m 03s.xml">
+      <configuration name="TransactionRepositoryShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TransactionRepositoryShould - 2017.02.06 at 11h 43m 10s.xml">
       <configuration name="TransactionRepositoryShould" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -831,11 +841,14 @@
         <state relative-caret-position="136">
           <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#257#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -942,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="0">
           <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
           <folding />
         </state>
@@ -974,27 +987,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
-          <folding>
-            <element signature="e#140#141#0" expanded="true" />
-            <element signature="e#197#198#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Clock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -1018,27 +1010,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="337">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#222#223#0" expanded="true" />
-            <element signature="e#266#267#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#244#257#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#729#730#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="260">
+          <caret line="28" column="85" lean-forward="false" selection-start-line="28" selection-start-column="85" selection-end-line="28" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#787#788#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1046,8 +1038,31 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="98" column="127" lean-forward="false" selection-start-line="98" selection-start-column="127" selection-end-line="98" selection-end-column="127" />
+          <caret line="98" column="200" lean-forward="false" selection-start-line="98" selection-start-column="200" selection-end-line="98" selection-end-column="200" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/should/TransactionRepositoryShould.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="56" lean-forward="true" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1438#1439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
+          <folding>
+            <element signature="e#140#141#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
