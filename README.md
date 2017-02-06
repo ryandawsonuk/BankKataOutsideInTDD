@@ -98,4 +98,12 @@ So we need a Clock abstraction but we don't have to implement it just yet. All w
 
 Once we've got the side-effects defined in the create_and_store_a_transaction test of TransactionRepositoryShould, then we will need to fill in Transaction. It doesn't need behaviour, just attributes. But we do need equals and hashCode implemented (auto-implemented using IDE) so that Transactions can be compared by content.
 
-Withdrawal is then basically the same as deposit. 
+Withdrawal is then basically the same as deposit.
+
+### Fifth Movement - Unit Testing the Clock abstraction
+
+Clock's only function is to return today's date as a formatted string. We need to test for the formatting as we can't control what day will be produced in the implementation if we get a date from Java library, since that depends on the world.
+
+So the side-effect to test for is the format of the date. But how do we control for testing purposes what date the clock produces?
+
+We can do this by creating a method within the Clock that produces the date and then we can override that method within our test.
