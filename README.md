@@ -107,3 +107,11 @@ Clock's only function is to return today's date as a formatted string. We need t
 So the side-effect to test for is the format of the date. But how do we control for testing purposes what date the clock produces?
 
 We can do this by creating a method within the Clock that produces the date and then we can override that method within our test.
+
+### Sixth Movement - Printing Statements, unit test StatementPrinter and then implement print
+
+Back to the PrintStatementFeature Acceptance Test to decide what to do next again to decide what to do next. Running gives UnsupportedOperationException, this time on StatementPrinter.print. So we want to unit test StatementPrinter.
+
+What is the side-effect of StatementPrinter doing a print? It is going to have to send something to the Console. So we're going to want to mock Console and stub at least one method to check it's invoked. But we already have a stubbed method from the AT called printLine, which is what we want.
+
+We can test that the printing always includes a header. This should happen even if there are no transactions.
