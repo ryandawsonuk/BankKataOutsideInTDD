@@ -116,4 +116,4 @@ What is the side-effect of StatementPrinter doing a print? It is going to have t
 
 We can test that the printing always includes a header. This should happen even if there are no transactions. So we can test for that an implement that behaviour.
 
-We also know that the StatementPrinter should print transactions in reverse chronological order.
+We also know that the StatementPrinter should print transactions in reverse chronological order. We know how to test for this as we basically did it already in PrintStatementFeature. But this time we want to create the transactions for the test specifically, not through Account (as we're not testing Account in the StatementPrinter unit test).
