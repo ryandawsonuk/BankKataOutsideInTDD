@@ -3,9 +3,9 @@ package com.bankkata;
 /**
  * Created by ryan on 06/02/2017.
  */
-public class Transaction {
+public class Clock {
 
-    public Transaction(String date, int amount){
+    public String dateAsString(){
         throw new UnsupportedOperationException();
     }
 }

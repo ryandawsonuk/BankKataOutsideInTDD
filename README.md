@@ -89,3 +89,11 @@ We want to test for what the TransactionRepository should do when addDeposit is 
 In a real application TransactionRepository would probably be going to a database and we'd probably have an Integration test (maybe using an h2 in-memory db or pointing to a designated test db). But for this kata we will treat it as a unit test and make TransactionRepositoryShould an in-memory repo.
 
 What do we want to check of the TransactionRepository when a deposit is made? That when we invoke addDeposit then the deposit that we made is recorded. This means being able to check that the transaction recorded matches the one passed to the repo.
+
+So we need to start to fill in what attributes will be going into Transaction by giving it a constructor signature, but initially we just stub out Transaction's constructor to throw an UnsupportedOperationException.
+
+What will be involved in creating Transactions? Note that Transactions have a date on them. But we can't control what the current date will be as that's part of the external world. We will have to abstract that in order to mock it.
+
+So we need a Clock abstraction but we don't have to implement it just yet. All we need is to specify the form of the method that we'll want from it for the purposes of testing TransactionRepository. That's going to be something to return a date. For now that method will just throw an UnsupportedOperationException so that we can mock the method.
+
+Today's date is going to be automatically added to deposits so we will need to inject the Clock into the TransactionRepository.
