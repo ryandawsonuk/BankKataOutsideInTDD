@@ -96,4 +96,5 @@ What will be involved in creating Transactions? Note that Transactions have a da
 
 So we need a Clock abstraction but we don't have to implement it just yet. All we need is to specify the form of the method that we'll want from it for the purposes of testing TransactionRepository. That's going to be something to return a date. For now that method will just throw an UnsupportedOperationException so that we can mock the method. Today's date is going to be automatically added to deposits so we will need to inject the Clock into the TransactionRepository.
 
-Once we've got the side-effects defined in the create_and_store_a_transaction test of TransactionRepositoryShould, then we will need to fill in Transaction. It doesn't need behaviour, just attributes.
+Once we've got the side-effects defined in the create_and_store_a_transaction test of TransactionRepositoryShould, then we will need to fill in Transaction. It doesn't need behaviour, just attributes. But we do need equals and hashCode implemented (auto-implemented using IDE) so that Transactions can be compared by content.
+

@@ -3,6 +3,8 @@ package com.bankkata;
 import java.util.ArrayList;
 import java.util.List;
 
+import static java.util.Collections.unmodifiableList;
+
 /**
  * Created by ryan on 05/02/2017.
  */
@@ -25,6 +27,6 @@ public class TransactionRepository {
     }
 
     public List<Transaction> allTransactions(){
-        throw new UnsupportedOperationException();
+        return unmodifiableList(transactions);
     }
 }
