@@ -18,10 +18,10 @@ Create a simple bank application with the following features:
 
 A Statement should have the following the format:
 
-    DATE       | AMOUNT  | BALANCE
-  10/04/2014 | 500.00  | 1400.00
-  02/04/2014 | -100.00 | 900.00
-  01/04/2014 | 1000.00 | 1000.00
+DATE       | AMOUNT  | BALANCE
+10/04/2014 | 500.00  | 1400.00
+02/04/2014 | -100.00 | 900.00
+01/04/2014 | 1000.00 | 1000.00
 
 ## Constraints
 
@@ -140,3 +140,5 @@ No dates are getting added to the Transactions. This is because we gave explicit
 ## What is the point?
 
 The main purpose was to illustrate the Outside-In/Mockist approach to TDD in sufficient detail that it can be used for reference. Another reason is to illustrate how design decisions get made in this approach. Note the number of design decisions made in movements 2 and 4 especially. We had to make those decisions in order to proceed and the method itself didn't show us how to make them.
+
+For more on why this matters, see http://www.ustream.tv/recorded/86157842
