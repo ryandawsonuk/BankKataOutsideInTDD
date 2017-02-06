@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae503968-ff56-4e3e-811f-667d72aeec3b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/Account.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/Account.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" afterPath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/should/AccountShould.java" afterPath="$PROJECT_DIR$/src/test/java/should/AccountShould.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,8 +43,8 @@
       <file leaf-file-name="AccountShould.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/should/AccountShould.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="201">
+              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,10 +55,13 @@
       <file leaf-file-name="TransactionRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
               <folding>
+                <element signature="e#141#142#0" expanded="true" />
                 <element signature="e#198#199#0" expanded="true" />
+                <element signature="e#242#243#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +92,8 @@
       <file leaf-file-name="Account.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+            <state relative-caret-position="306">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding>
                 <element signature="e#210#211#0" expanded="true" />
                 <element signature="e#276#277#0" expanded="true" />
@@ -124,13 +125,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/AccountShould.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/should/AccountShould.java" />
         <option value="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Account.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/should/AccountShould.java" />
       </list>
     </option>
   </component>
@@ -359,6 +360,32 @@
       <patterns />
       <method />
     </configuration>
+    <configuration default="false" name="AccountShould.store_a_deposit_transaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="should.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="bankkata" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="should" />
+      <option name="MAIN_CLASS_NAME" value="should.AccountShould" />
+      <option name="METHOD_NAME" value="store_a_deposit_transaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -563,16 +590,18 @@
       <listeners />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature.print_statement_containing_all_transactions" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.AccountShould" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AccountShould.store_a_deposit_transaction" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="JUnit.AccountShould" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature.print_statement_containing_all_transactions" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AccountShould.store_a_deposit_transaction" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature.print_statement_containing_all_transactions" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PrintStatementFeature" />
       </list>
     </recent_temporary>
   </component>
@@ -592,6 +621,12 @@
   <component name="TestHistory">
     <history-entry file="AccountShould - 2017.02.06 at 09h 10m 13s.xml">
       <configuration name="AccountShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountShould - 2017.02.06 at 09h 14m 16s.xml">
+      <configuration name="AccountShould" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AccountShould_store_a_deposit_transaction - 2017.02.06 at 09h 13m 42s.xml">
+      <configuration name="AccountShould.store_a_deposit_transaction" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PrintStatementFeature - 2017.02.05 at 00h 28m 21s.xml">
       <configuration name="PrintStatementFeature" configurationId="JUnit" />
@@ -683,7 +718,10 @@
         <state relative-caret-position="136">
           <caret line="8" column="50" lean-forward="false" selection-start-line="8" selection-start-column="50" selection-end-line="8" selection-end-column="50" />
           <folding>
+            <element signature="e#141#142#0" expanded="true" />
             <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -803,18 +841,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
           <folding>
+            <element signature="e#141#142#0" expanded="true" />
             <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#242#243#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bankkata/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="e#210#211#0" expanded="true" />
             <element signature="e#276#277#0" expanded="true" />
@@ -826,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/should/AccountShould.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="43" />
+        <state relative-caret-position="201">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
