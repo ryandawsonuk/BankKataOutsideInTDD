@@ -18,10 +18,12 @@ Create a simple bank application with the following features:
 
 A Statement should have the following the format:
 
->DATE       | AMOUNT  | BALANCE
->10/04/2014 | 500.00  | 1400.00
->02/04/2014 | -100.00 | 900.00
->01/04/2014 | 1000.00 | 1000.00
+>DATE       &#124; AMOUNT  &#124; BALANCE
+>10/04/2014 &#124; 500.00  &#124; 1400.00
+>02/04/2014 &#124; -100.00 &#124; 900.00
+>01/04/2014 &#124; 1000.00 &#124; 1000.00
+
+(If reading text editor note pipe characters escaped for markdown.)
 
 ## Constraints
 
