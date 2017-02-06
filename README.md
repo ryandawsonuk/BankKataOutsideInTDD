@@ -76,4 +76,4 @@ Where will the transactions to print come from? For AccountShould we want to moc
 
 We also want to mock StatementPrinter, as that's a delegate and not part of Account.
 
-What we're testing of Account is that when we call printStatement of Account then it invokes print in StatementPrinter.
+What we're testing of Account is that when we call printStatement of Account then it invokes print in StatementPrinter. For Account to call printStatement is going to need to get a StatementPrinter injected into it via constructor.

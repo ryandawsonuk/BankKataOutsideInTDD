@@ -2,6 +2,7 @@ package feature;
 
 import com.bankkata.Account;
 import com.bankkata.Console;
+import com.bankkata.StatementPrinter;
 import com.bankkata.TransactionRepository;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,9 +26,10 @@ public class PrintStatementFeature {
 
     @Before
     public void initialise(){
-
+        StatementPrinter statementPrinter = new StatementPrinter();
         TransactionRepository transactionRepository = new TransactionRepository();
-        account = new Account(transactionRepository);
+        account = new Account(transactionRepository,statementPrinter);
+
     }
 
     /**
