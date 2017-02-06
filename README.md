@@ -4,7 +4,7 @@ This is the Bank Kata implemented with the aim of following Sandro Mancuso's exa
 
 All credit for this should go to Mancuso and Codurance. Any mistakes are down to me.
 
-Following the method, we start with an Acceptance Test, create stubs for any delegates (shells with stubbed methods) and work on the acceptance test until it fails for the right reason.
+Following the method, we start with an Acceptance Test, create stubs for any delegates/collaborators (shells with stubbed methods) and work on the acceptance test until it fails for the right reason.
 
 ## Problem Description - Bank Kata
 
@@ -74,6 +74,18 @@ We want to delegate that to a new class. We call it StatementPrinter. It will ne
 
 Where will the transactions to print come from? For AccountShould we want to mock retrieval of Transactions from TransactionRepository. So we add a new allTransactions method to TransactionRepository that we can mock the result of.
 
-We also want to mock StatementPrinter, as that's a delegate and not part of Account.
+We also want to mock StatementPrinter, as that's a collaborator and not part of Account.
 
 What we're testing of Account is that when we call printStatement of Account then it invokes print in StatementPrinter. For Account to call printStatement is going to need to get a StatementPrinter injected into it via constructor.
+
+### Fourth Movement - back to PrintStatementFeature Acceptance Test - Unit test next collaborator, the TransactionRepository
+
+So we've unit tested Account now and we can go back to the PrintStatementFeature Acceptance Test to decide what to do next. Running it shows us that we've got unimmplemented methods in the collaborators (because the AT isn't mocking like the unit tests are).
+
+The AT gives us UnsupportedOperationException from TransactionRepository.addDeposit. It's one of the stubs that we haven't implemented yet and don't have a unit test for it yet. So next step is to create a unit test - TransactionRepositoryShould.
+
+We want to test for what the TransactionRepository should do when addDeposit is called on it. Given that we created a (currently empty/placeholder) Transaction class, we're going to want addDeposit to create Transactions and keep record of them.
+
+In a real application TransactionRepository would probably be going to a database and we'd probably have an Integration test (maybe using an h2 in-memory db or pointing to a designated test db). But for this kata we will treat it as a unit test and make TransactionRepositoryShould an in-memory repo.
+
+What do we want to check of the TransactionRepository when a deposit is made? That when we invoke addDeposit then the deposit that we made is recorded. This means being able to check that the transaction recorded matches the one passed to the repo.
