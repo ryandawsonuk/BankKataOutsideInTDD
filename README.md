@@ -54,7 +54,7 @@ The PrintStatementFeature will be failing for the right reason when it throws "W
 
 Will we inject console into Account or into something else? We don't want to decide that yet. Next step is to consider how to unit test account and let the decision come out as we go along.
 
-### Second Movement - unit testing our way into Account
+### Second Movement - unit testing our way into Account, deposits and withdrawals
 
 So we need a unit test for account. We need to think about what we want account to do. It has to record debits, withdrawals and enable printing of a statement. So transactions are going to go through it.
 
@@ -62,5 +62,18 @@ Presumably we are going to want transactions to be managed via a repository. So 
 
 We mock the TransactionRepository within the Account's unit test as it isn't part of the Account. The TransactionRepository will need to be injected into Account if depositing through Acccount is to invoke it.
 
-For the PrintStatementFeature Acceptance Test we use an unmocked instance of TransactionRepository, since the Acceptance Test is testing everything internal to the system.
+For the PrintStatementFeature Acceptance Test we use an unmocked instance of TransactionRepository, since the Acceptance Test is testing everything internal to the system. So we
 
+### Third Movement - unit testing our way into Account, printing statements
+
+So we have a plan for handling deposits and withdrawals in TransactionRepository and we're happy Account can call to it correctly. But what about printStatement in Account?
+
+There is a lot of formatting to be done in a statement. Would we want to have to change Account if that format were to change? Should it be Account's job to handle formatting?
+
+We want to delegate that to a new class. We call it StatementPrinter. It will need a print method, which will give a list of transactions as a parameter. So we also want to create Transaction as a new class.
+
+Where will the transactions to print come from? For AccountShould we want to mock retrieval of Transactions from TransactionRepository. So we add a new allTransactions method to TransactionRepository that we can mock the result of.
+
+We also want to mock StatementPrinter, as that's a delegate and not part of Account.
+
+What we're testing of Account is that when we call printStatement of Account then it invokes print in StatementPrinter.

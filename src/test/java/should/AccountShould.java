@@ -1,14 +1,20 @@
 package should;
 
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 
 import com.bankkata.Account;
+import com.bankkata.StatementPrinter;
+import com.bankkata.Transaction;
 import com.bankkata.TransactionRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by ryan on 05/02/2017.
@@ -18,6 +24,7 @@ public class AccountShould {
 
     @Mock TransactionRepository transactionRepository;
     private Account account;
+    @Mock StatementPrinter statementPrinter;
 
     @Before
     public void initialise(){
@@ -38,4 +45,16 @@ public class AccountShould {
         verify(transactionRepository).addWithdrawal(100);
     }
 
+    @Test
+    public void print_a_statement(){
+
+        List<Transaction> transactions = Arrays.asList(new Transaction());
+
+        //mmock the retrieval of transactions from transactionRepository
+        given(transactionRepository.allTransactions()).willReturn(transactions);
+
+        account.printStatement();
+
+        verify(statementPrinter).print(transactions);
+    }
 }
