@@ -17,6 +17,7 @@ Create a simple bank application with the following features:
 ## Acceptance criteria
 
 A Statement should have the following the format:
+
     DATE       | AMOUNT  | BALANCE
   10/04/2014 | 500.00  | 1400.00
   02/04/2014 | -100.00 | 900.00
@@ -28,7 +29,7 @@ We have to have a class Account with the following void methods
 
 deposit(int amount), withdraw(int amount), printStatement()
 
-We are not allowed to add any futher public methods to Account. We don't want to add extra getters to help us test it, we test from the outside - the side-effects.
+So Account is more of a service than an entity. We are not allowed to add any futher public methods to Account. We don't want to add extra getters to help us test it, we test from the outside - the side-effects.
 
 We use Strings and integers for dates and amounts to keep things simple.
 
@@ -60,3 +61,6 @@ So we need a unit test for account. We need to think about what we want account 
 Presumably we are going to want transactions to be managed via a repository. So to test a deposit we are going to need to check that something happens through a TransactionRepository. It's going to need some sort of deposit method.
 
 We mock the TransactionRepository within the Account's unit test as it isn't part of the Account. The TransactionRepository will need to be injected into Account if depositing through Acccount is to invoke it.
+
+For the PrintStatementFeature Acceptance Test we use an unmocked instance of TransactionRepository, since the Acceptance Test is testing everything internal to the system.
+
