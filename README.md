@@ -114,4 +114,6 @@ Back to the PrintStatementFeature Acceptance Test to decide what to do next agai
 
 What is the side-effect of StatementPrinter doing a print? It is going to have to send something to the Console. So we're going to want to mock Console and stub at least one method to check it's invoked. But we already have a stubbed method from the AT called printLine, which is what we want.
 
-We can test that the printing always includes a header. This should happen even if there are no transactions.
+We can test that the printing always includes a header. This should happen even if there are no transactions. So we can test for that an implement that behaviour.
+
+We also know that the StatementPrinter should print transactions in reverse chronological order.
