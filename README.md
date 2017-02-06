@@ -133,9 +133,9 @@ console.printLine(
 
 But much the same test in StatementPrinterShould passed. What could cause this? A clue comes from debugging:
 
-(TransactionsWithNoDates.gif)[TransactionsWithNoDates.gif]
+![Image of TransactionsWithNoDates](TransactionsWithNoDates.gif)
 
-No dates are getting added to the Transactions. This is because we gave explicit dates in StatementPrinterShould but are mocking the Clock in PrintStatementFeature. And we haven't told the Clock mock what to return.
+No dates are getting added to the Transactions. This is because we gave explicit dates in StatementPrinterShould but are mocking the Clock in PrintStatementFeature. And we haven't told the Clock mock what to return. So we just need to do that for the test to pass.
 
 ## What is the point?
 

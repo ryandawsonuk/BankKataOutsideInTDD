@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ae503968-ff56-4e3e-811f-667d72aeec3b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/StatementPrinter.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/StatementPrinter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" afterPath="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +32,8 @@
             <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/README.md">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="567">
-                    <caret line="137" column="215" lean-forward="false" selection-start-line="137" selection-start-column="215" selection-end-line="137" selection-end-column="215" />
+                  <state relative-caret-position="417">
+                    <caret line="137" column="264" lean-forward="false" selection-start-line="137" selection-start-column="264" selection-end-line="137" selection-end-column="264" />
                     <folding />
                   </state>
                 </provider>
@@ -181,8 +179,8 @@
       <file leaf-file-name="PrintStatementFeature.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="393">
+              <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -223,12 +221,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/TransactionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Clock.java" />
         <option value="$PROJECT_DIR$/src/test/java/should/ClockShould.java" />
-        <option value="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
         <option value="$PROJECT_DIR$/src/test/java/should/StatementPrinterShould.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/StatementPrinter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bankkata/Console.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java" />
       </list>
     </option>
   </component>
@@ -762,8 +760,8 @@
     <history-entry file="PrintStatementFeature_print_statement_containing_all_transactions - 2017.02.06 at 14h 27m 53s.xml">
       <configuration name="PrintStatementFeature.print_statement_containing_all_transactions" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="StatementPrinterShould - 2017.02.06 at 12h 40m 02s.xml">
-      <configuration name="StatementPrinterShould" configurationId="JUnit" />
+    <history-entry file="PrintStatementFeature_print_statement_containing_all_transactions - 2017.02.06 at 14h 39m 48s.xml">
+      <configuration name="PrintStatementFeature.print_statement_containing_all_transactions" configurationId="JUnit" />
     </history-entry>
     <history-entry file="StatementPrinterShould - 2017.02.06 at 12h 45m 07s.xml">
       <configuration name="StatementPrinterShould" configurationId="JUnit" />
@@ -792,7 +790,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329429" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -804,7 +802,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1067,14 +1065,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="137" column="215" lean-forward="false" selection-start-line="137" selection-start-column="215" selection-end-line="137" selection-end-column="215" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/should/StatementPrinterShould.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1091,10 +1081,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="137" column="264" lean-forward="false" selection-start-line="137" selection-start-column="264" selection-end-line="137" selection-end-column="264" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/feature/PrintStatementFeature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="393">
+          <caret line="53" column="41" lean-forward="false" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

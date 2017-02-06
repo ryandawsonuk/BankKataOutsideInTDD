@@ -8,6 +8,7 @@ import org.mockito.InOrder;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.inOrder;
 
@@ -38,6 +39,10 @@ public class PrintStatementFeature {
      * The order of the transactions in the statement is important.
      */
     @Test public void print_statement_containing_all_transactions(){
+
+        //mock clock has to return expected dates, in the expected order of calls
+        given(clock.dateAsString()).willReturn("01/04/2014", "02/04/2014", "10/04/2014");
+
         account.deposit(1000);
         account.withdraw(100);
         account.deposit(500);
